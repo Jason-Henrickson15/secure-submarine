@@ -1,38 +1,6 @@
 # Secure Submarine
 This version uses React, Redux, Express, Passport, and PostgreSQL (a full list of dependencies can be found in `package.json`). This version uses React to control the login requests and redirection in coordination with client-side routing.
 
-## Use the Download ZIP Option (Don't Fork & Don't Clone)
-
-**Step 1 - Download ZIP of Project:**
-- click on the **Code** button
-    - select the **Download ZIP** option from the menu
-- file download should appear at the bottom of your web browser
-    - click on the downloaded file icon
-- a finder window should open with the assignment folder unzipped in the Downloads directory
-- move the folder to where you are keeping your projects
-
-**Step 2 - Initialize as a Repo:**
-- open the project in VSCode
-- open up the terminal in VSCode for the project
-    - *in terminal:* run `git init`
-    - *in terminal:* run `git add .`
-    - *in terminal:* run `git commit -m "initial commit"`
-
-**Step 3 - Attach GitHub Repo:**
-- goto GitHub in the browser (make sure you are logged in)
-- click on the `+` icon in the top right of the window
-    - select **New repository** from the menu
-- name your repo **secure-submarine**
-- make sure your repo has **Public** selected
-- click the **Create repository** button at the bottom
-- copy the terminal commands listed in the **…or push an existing repository from the command line** section
-- goto your project terminal in VSCode and paste the commands you just copied from GitHub and press **return**
-
-
----
-
-## Assignment Instructions
-
 ### Base Mode
 
 On the Secure Submarine, there are many secrets, but our enemies are out to steal our secrets! We just realized that our Secure Submarine web portal (the portal for all of the hottest gossip on the secure submarine) is compromised! Anyone, logged in or not, can visit `http://localhost:5000/api/secrets` to see all of the secrets for the entire crew!
@@ -51,8 +19,8 @@ router.get('/', rejectUnauthenticated, (req, res) => {
 
 Do this for the secrets route to achieve these results:
 
-- [ ] An unauthenticated user visiting `http://localhost:5000/api/secrets` should get a `403` or `forbidden` error instead of seeing the secrets.
-- [ ] A user like `Admiral Greer` with password `tuna` should still be able to visit `http://localhost:3000/#/secrets` to see all of the secrets.
+- [x] An unauthenticated user visiting `http://localhost:5000/api/secrets` should get a `403` or `forbidden` error instead of seeing the secrets.
+- [x] A user like `Admiral Greer` with password `tuna` should still be able to visit `http://localhost:3000/#/secrets` to see all of the secrets.
 
 #### No Secrets Above Clearance Level (Authorization)
 
